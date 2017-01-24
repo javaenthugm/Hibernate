@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+
+    <class name="com.gk.study.java.hibernate.model.User" table="users" lazy="true">
+        <id name="userid" column="userid">
+             <generator class="native"/>
+        </id> 
+        <property name="firstname"/>
+        <property name="lastname"/>
+        <property name="nickname"/>
+        <property name="dob" type="timestamp" column="dob" />
+        <property name="crtdt" type="timestamp" column="crtdt"/>
+        <property name="isactive"/>
+    </class>
+
+</hibernate-mapping>
